@@ -1,0 +1,7 @@
+<h1>Opérations sur les produits</h1>
+<ul>
+    @for (p of products(); track p.id) {
+        <li>Id: {{p.id}} -- Nom: {{p.name}} -- Prix: {{p.price}} DT</li>
+    }
+    <button (click)="onAddProduct()">Ajouter</button>
+</ul>
